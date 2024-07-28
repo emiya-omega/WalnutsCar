@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\ml_gpio.o"
+".\objects\ml_delay.o"
+".\objects\ml_nvic.o"
+".\objects\ml_pwm.o"
+".\objects\ml_tim.o"
+".\objects\ml_uart.o"
+".\objects\ml_adc.o"
+".\objects\ml_exti.o"
+".\objects\ml_mpu6050.o"
+".\objects\ml_i2c.o"
+".\objects\ml_oled.o"
+".\objects\ml_hmc5883l.o"
+".\objects\motor.o"
+".\objects\pid.o"
+".\objects\filter.o"
+".\objects\gray_track.o"
+".\objects\main.o"
+".\objects\isr.o"
+--strict --scatter ".\Objects\Project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Project.map" -o .\Objects\Project.axf
